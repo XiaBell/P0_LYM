@@ -5,6 +5,14 @@ import re
 # This program takes an specific file, so if you want to try it with another you must change the path in the reader function.
 
 
+MOVES = ["left", "right", "forward", "back"]
+CONDITIONS = ["not", "zero?", "blocked?", "if", "then"]
+COMMANDS = ["turnToMy", "turnToThe", "walk", "jump", "drop", "pick", "grap", "letGo", "pop", "moves", "nop", "safeExe"]
+DEFINITIONS = ["NEW VAR", "NEW MACRO", "EXEC"]
+DIRECTIONS =["left", "rigth", "back"]
+
+
+
 
 def reader (file_path):
     
